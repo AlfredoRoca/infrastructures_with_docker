@@ -17,6 +17,7 @@ services:
       - ./code:/code
       - type: tmpfs
         target: /code/tmp/pids/
+      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
     ports:
       - "3000:3000"
     depends_on:
